@@ -1,0 +1,40 @@
+@import url(reset.css);/**Importamos reset**/
+
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');/*Traemos las fuentes de Google*/
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"); /*cdn de fontawesome 5.13.1_Importar el css*/
+
+/*Vamos a usar:
+handlee y montserrat 400 y 700*/
+/*Estas son las reglas para usar las fuentes: 
+font-family: 'Handlee', cursive;
+font-family: 'Montserrat', sans-serif;
+*/
+
+*{
+    box-sizing: border-box; /*Chrome*/
+    -webkit-box-sizing: border-box; /*Safari*/
+    -o-box-sizing: border-box;/*opera*/
+    -moz-box-sizing: border-box;/*mozilla*/
+    -ms-box-sizing: border-box;/*microsoft*/
+}
+
+/*Creamos variables globales, es necesario :root  y  --  */
+:root {
+    --color-principal: #fa573a;
+    --color-secundario: #21242e;
+    --fuentePrincipal: 'Montserrat', sans-serif;
+    --fuenteSecundario: 'Handlee', cursive;
+}
+
+body {
+    font-family: var(--fuentePrincipal); /*Así se usa la variable creada*/
+    font-size: 1em;
+}
+
+/*Buenas prácticas*/
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
