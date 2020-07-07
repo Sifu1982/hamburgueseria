@@ -183,3 +183,80 @@ footer a:hover {
         border-bottom: 0px;
     }
 }
+
+/* inicio hero*/
+
+.hero {
+    background-image: url('../images/fondo.jpg');
+    height: 70vh;
+    background-repeat: no-repeat;
+    /*La imagen no es lo suficientemente grande entonces uso cover*/
+    background-size: cover;
+    /*Con esto hago que toda la imagen se vea en toda la pantalla (cover=toda)*/
+    background-position: center center;
+    background-color: #777777;
+    background-blend-mode: multiply;
+    /*background-blend-mode Une las distintas capas que hay en el hero*/
+    display: flex;
+    align-items: center;
+}
+
+.hero .container {
+    width: 80%;
+}
+
+.hero h1 {
+    font-family: var(--fuenteSecundario);
+    font-size: 2.5em;
+    color: white;
+}
+
+.hero h2 {
+    color: var(--color-principal);
+    font-size: 1.50em;
+    margin: 1em 0;
+}
+
+.hero p {
+    font-size: 1.15em;
+    color: white;
+}
+
+.boton {
+    display: inline-block;
+    background-color: var(--color-principal);
+    color: white;
+    padding: 1.15em;
+    text-decoration: none;
+    margin: 1em 0;
+    border: 1px solid var(--color-principal);
+}
+
+.boton:hover {
+    background-color: transparent;
+    color: var(--color-principal);
+}
+
+.boton i {
+    transition: transform 0.5s;
+    /*Transition se aplica a transform durante 0.5 segundos*/
+}
+
+.boton:hover i {
+    transform: translateX(5px);
+    /*se va a transformar y a trasladar en el eje X 5px**/
+}
+
+.hero .social li {
+    display: inline-block;
+    font-size: 2em;
+    margin-right: 1em;
+}
+
+.hero .social a {
+    color: white;
+    text-decoration: none;
+}
+
+/* fin hero*/
+}
